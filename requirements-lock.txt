@@ -1,0 +1,13 @@
+# Exact versions used for the delivered experiment (Python 3.14.4).
+# For full setup: pip install -r requirements.txt -c requirements-lock.txt
+numpy==2.5.1
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+matplotlib==3.11.0
+streamlit==1.59.1
+joblib==1.5.3
+nbformat==5.10.4
+nbclient==0.11.0
+ipykernel==7.3.0
+pytest==9.1.1

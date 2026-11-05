@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.ipynb text eol=lf
+data/forestfires.csv -text
+data/forestfires.names -text
+*.joblib binary
+*.png binary

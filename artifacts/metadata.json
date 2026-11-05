@@ -1,0 +1,52 @@
+{
+  "target": "P(recorded area > 0 | recorded fire, predictors); proxy, not ignition probability",
+  "split_seed": 42,
+  "split_summary": {
+    "train": {
+      "records": 237,
+      "spatial_groups": 21,
+      "positive_fraction": 0.4641350210970464
+    },
+    "validation": {
+      "records": 89,
+      "spatial_groups": 7,
+      "positive_fraction": 0.5393258426966292
+    },
+    "test": {
+      "records": 191,
+      "spatial_groups": 8,
+      "positive_fraction": 0.5863874345549738
+    }
+  },
+  "rows": 517,
+  "data_sha256": "0d6586a1fa52f55bef48578aef14eb97273f1e9330e1a53423df497a77065253",
+  "best_parameters": {
+    "BMA": {
+      "model__prior_scale": 2.5
+    },
+    "Logistic Regression": {
+      "model__C": 0.01
+    },
+    "Decision Tree": {
+      "model__max_depth": 2,
+      "model__min_samples_leaf": 5
+    },
+    "Random Forest": {
+      "model__max_depth": 3,
+      "model__min_samples_leaf": 15
+    },
+    "Prevalence Baseline": {}
+  },
+  "python": "3.14.4",
+  "versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "streamlit": "1.59.1",
+    "joblib": "1.5.3"
+  },
+  "threshold_protocol": "Validation F1 grid search; validation F1 is selection-biased",
+  "validation_brier_protocol": "Untouched by hyperparameter search; no calibration fitting",
+  "uncertainty": "Laplace evidence and coefficient posteriors are approximations; weights conditional on candidate family."
+}
